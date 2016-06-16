@@ -61,5 +61,18 @@ function trackDrag(onMove, onEnd) {
   addEventListener("mouseup", end);
 }
 
+tools.Line = function(event, cx, onEnd) {
+  cx.lineCap = "round";
+  
+  var pos = relativePos(event, cx.canvas);
+  trackDrag(function(event) {
+    cx.beginPath();
+    cx.moveTo(pos.x, pos.y);
+    pos = relativePos(event, cx.canvas);
+    cx.lineTo(pos.x, pos.y);
+    cx.stroke();
+  }, onEnd);
+};
+
 var app = document.querySelector("#app");
 createPaint(app);
