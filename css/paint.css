@@ -1,3 +1,21 @@
 canvas {
-    background: pink;
+    background: rgba(131, 244, 255, 0.17);
+    border: 2px solid #76A4A7;
+    border-radius: 5px;
+}
+
+
+select {
+  position: relative;
+  width: 200px;
+  margin: 0 auto;
+  padding: 10px;
+  background: #fff;
+  border-radius: 7px;
+  border: 1px solid rgba(0,0,0,0.15);    
+  box-shadow: 0 1px 1px rgba(50,50,50,0.1);
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  color: #8AA8BD;
 }
