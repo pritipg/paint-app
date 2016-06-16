@@ -27,6 +27,22 @@ function createPaint(parent) {
   parent.appendChild(elt("div", null, panel, toolbar));
 }
 
+var tools = Object.create(null);
+
+controls.select = function(cx) {
+  var select = elt("select");
+  for (var name in tools)
+    select.appendChild(elt("option", null, name));
+  
+  cx.canvas.addEventListener("mousedown", function(event) {
+    if (event.which == 1) {
+      tools[select.value](event, cx);
+      event.preventDefault();
+    }
+  });
+  
+  return elt("span", null, "Tools: ", select);
+};
 
 var app = document.querySelector("#app");
 createPaint(app);
