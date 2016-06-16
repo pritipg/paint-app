@@ -26,3 +26,7 @@ function createPaint(parent) {
   var panel = elt("div", {class: "panel"}, canvas);
   parent.appendChild(elt("div", null, panel, toolbar));
 }
+
+
+var app = document.querySelector("#app");
+createPaint(app);
