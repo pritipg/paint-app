@@ -50,6 +50,16 @@ function relativePos(event, element) {
           y: Math.floor(event.clientY - rect.top)};
 }
 
+function trackDrag(onMove, onEnd) {
+  function end(event) {
+    removeEventListener("mousemove", onMove);
+    removeEventListener("mouseup", end);
+    if (onEnd)
+      onEnd(event);
+  }
+  addEventListener("mousemove", onMove);
+  addEventListener("mouseup", end);
+}
 
 var app = document.querySelector("#app");
 createPaint(app);
