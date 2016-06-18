@@ -89,5 +89,16 @@ controls.color = function(cx) {
   });
   return elt("span", null, "Color: ", input);
 };
+
+controls.brush = function(cx) {
+  var input = elt("input", {type: "range", min: 1, max: 21, step: 2, value: 1});
+  var output = elt("span", null, "1px");
+  input.addEventListener("change", function(event){
+    cx.lineWidth = input.value;
+    output.textContent = input.value + "px";
+  });
+  return elt("span", null, "Brush: ", input, output);
+};
+
 var app = document.querySelector("#app");
 createPaint(app);
