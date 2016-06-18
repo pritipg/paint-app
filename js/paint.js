@@ -74,5 +74,12 @@ tools.Line = function(event, cx, onEnd) {
   }, onEnd);
 };
 
+tools.Erase = function(event, cx) {
+  cx.globalCompositeOperation = "destination-out";
+  tools.Line(event, cx, function(event) {
+    cx.globalCompositeOperation = "source-over";
+  });
+};
+
 var app = document.querySelector("#app");
 createPaint(app);
