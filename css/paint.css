@@ -26,3 +26,7 @@ span {
 body {
   background: #FFFDF4;
 }
+
+.toolbar span {
+  margin-right: 10px;
+}
