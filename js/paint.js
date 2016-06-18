@@ -81,5 +81,13 @@ tools.Erase = function(event, cx) {
   });
 };
 
+controls.color = function(cx) {
+  var input = elt("input", {type: "color"});
+  input.addEventListener("change", function(event) {
+    cx.fillStyle = input.value;
+    cx.strokeStyle = input.value;
+  });
+  return elt("span", null, "Color: ", input);
+};
 var app = document.querySelector("#app");
 createPaint(app);
