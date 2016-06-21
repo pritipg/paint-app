@@ -3,7 +3,7 @@ div {
 }
 
 canvas {
-  background: #F5F5DC;
+  background: rgba(154, 205, 50, 0.4);
   border: 2px solid yellowgreen;
   border-radius: 5px;
 }
