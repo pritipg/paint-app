@@ -21,7 +21,6 @@ select {
   position: relative;
   width: 200px;
   margin: 0 auto;
-  padding: 10px;
   background: black;
   border-radius: 7px;
   border: 1px solid rgba(0,0,0,0.15);    
