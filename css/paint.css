@@ -4,16 +4,17 @@ div {
 
 canvas {
   background: #F5F5DC;
-  border: 2px solid #0A6D6D;
+  border: 2px solid yellowgreen;
   border-radius: 5px;
 }
 
 
 p {
   text-align: center;
-  font-family: 'Covered By Your Grace', cursive;
+ font-family: 
+ 'Gloria Hallelujah', cursive;
   font-size: 30px;
-  color: darkorange;
+  color: yellowgreen;
 }
 
 select {
@@ -28,16 +29,21 @@ select {
   cursor: pointer;
   outline: none;
   font-weight: bold;
-  color: darkorange;
+  color: yellowgreen;
+  font-family: 
+  'Gloria Hallelujah', cursive;
 }
 
 span {
-  color: darkorange;
+  color: yellowgreen;
   font-weight: bold;
+ font-family: 
+ 'Gloria Hallelujah', cursive;
+
 }
 
 input[type="color"] {
-  background: darkorange;
+  background: yellowgreen;
   border: 2px solid;
 }
 
@@ -50,16 +56,17 @@ input[type=range] {
 
 input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background-color: darkorange;
+    background-color: yellowgreen;
     opacity: 0.5;
     width: 10px;
     height: 26px;
 }
 
 body {
-  background: crimson;
+  background: rgba(228, 236, 5, 0.56);
 }
 
 .toolbar span {
   margin-right: 10px;
+  font-size: 30px;
 }
