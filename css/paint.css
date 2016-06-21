@@ -1,7 +1,19 @@
+div {
+  text-align: center;
+}
+
 canvas {
   background: #F5F5DC;
   border: 2px solid #0A6D6D;
   border-radius: 5px;
+}
+
+
+p {
+  text-align: center;
+  font-family: 'Covered By Your Grace', cursive;
+  font-size: 30px;
+  color: darkorange;
 }
 
 select {
@@ -9,22 +21,43 @@ select {
   width: 200px;
   margin: 0 auto;
   padding: 10px;
-  background: #fff;
+  background: black;
   border-radius: 7px;
   border: 1px solid rgba(0,0,0,0.15);    
   box-shadow: 0 1px 1px rgba(50,50,50,0.1);
   cursor: pointer;
   outline: none;
   font-weight: bold;
-  color: #8AA8BD;
+  color: darkorange;
 }
 
 span {
-  color: #0A6D6D;
+  color: darkorange;
+  font-weight: bold;
+}
+
+input[type="color"] {
+  background: darkorange;
+  border: 2px solid;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: black;
+    width: 200px;
+    height:20px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background-color: darkorange;
+    opacity: 0.5;
+    width: 10px;
+    height: 26px;
 }
 
 body {
-  background: #FFFDF4;
+  background: crimson;
 }
 
 .toolbar span {

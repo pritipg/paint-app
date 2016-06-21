@@ -20,11 +20,12 @@ var controls = Object.create(null);
 function createPaint(parent) {
   var canvas = elt("canvas", {width: 800, height: 400});
   var cx = canvas.getContext("2d");
+  var heading = elt("p", null, "Paint Application");
   var toolbar = elt("div", {class: "toolbar"});
   for (var name in controls)
     toolbar.appendChild(controls[name](cx));
   var panel = elt("div", {class: "panel"}, canvas);
-  parent.appendChild(elt("div", null, panel, toolbar));
+  parent.appendChild(elt("div", null, heading, panel, toolbar));
 }
 
 var tools = Object.create(null);
