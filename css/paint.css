@@ -3,69 +3,69 @@ div {
 }
 
 canvas {
-  background: rgba(154, 205, 50, 0.4);
-  border: 2px solid yellowgreen;
+  background: white;
   border-radius: 5px;
 }
 
 
 p {
   text-align: center;
- font-family: 
- 'Gloria Hallelujah', cursive;
+  font-family: 'Open Sans', sans-serif;
   font-size: 30px;
-  color: yellowgreen;
+  margin: 15px 0;
+  color: #002b36;
 }
 
 select {
   position: relative;
   width: 200px;
   margin: 0 auto;
-  background: black;
+  background: #002b36;
   border-radius: 7px;
   border: 1px solid rgba(0,0,0,0.15);    
   box-shadow: 0 1px 1px rgba(50,50,50,0.1);
   cursor: pointer;
   outline: none;
   font-weight: bold;
-  color: yellowgreen;
-  font-family: 
-  'Gloria Hallelujah', cursive;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
 }
 
 span {
-  color: yellowgreen;
+  color: #002b36;
   font-weight: bold;
- font-family: 
- 'Gloria Hallelujah', cursive;
-
+  font-family: 'Open Sans', sans-serif;
 }
 
 input[type="color"] {
-  background: yellowgreen;
+  background: #002b36;
   border: 2px solid;
 }
 
 input[type=range] {
-    -webkit-appearance: none;
-    background-color: black;
-    width: 200px;
-    height:20px;
+  -webkit-appearance: none;
+  background-color: #002b36;
+  width: 200px;
+  height: 20px;
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    background-color: yellowgreen;
-    opacity: 0.5;
-    width: 10px;
-    height: 26px;
+  -webkit-appearance: none;
+  background-color: white;
+  opacity: 0.5;
+  width: 10px;
+  height: 26px;
 }
 
 body {
-  background: rgba(228, 236, 5, 0.56);
+  background: #eee;
+}
+
+.toolbar {
+  margin: 15px 0;
 }
 
 .toolbar span {
   margin-right: 10px;
-  font-size: 30px;
+  font-size: 24px;
 }

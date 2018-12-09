@@ -18,7 +18,7 @@ function elt(name, attributes) {
 var controls = Object.create(null);
 
 function createPaint(parent) {
-  var canvas = elt("canvas", {width: 800, height: 400});
+  var canvas = elt("canvas", {width: 1024, height: 640});
   var cx = canvas.getContext("2d");
   var heading = elt("p", null, "Paint Application");
   var toolbar = elt("div", {class: "toolbar"});
